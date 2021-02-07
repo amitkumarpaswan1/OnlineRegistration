@@ -1,0 +1,304 @@
+
+body {
+  color: 10#060c;
+  font-family: "Montserrat", sans-serif; 
+    background: url(../images/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+body:before {
+    content: '';
+    background: #3e4095eb;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.d-flex {
+	display: flex;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-colmun {
+	flex-direction: column;
+}
+.align-items-center {
+	align-items: center;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+
+
+
+
+.reg-sec {
+	    padding-top: 71px;
+    display: flex;
+}
+
+.reg-box {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 50px;
+
+    border-radius: 20px 20px;
+}
+
+.reg-box input, .reg-box select, .reg-box textarea {
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    padding-left: 29px;
+    position: relative;
+    border: 1px solid #999;
+}
+.reg-box textarea {
+    height: 100px;
+    padding-top: 10px;
+}
+
+.reg-box input:focus, .reg-box textarea:focus, .reg-box select:focus {
+	outline: none;
+    border: 1px solid blue;
+}
+.verify {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    height: 32px;
+    background: #f8d615;
+    color: #333;
+    padding: 10px 21px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.reg-sec h2 {
+    background: #f8d615;
+    margin: 0 0 30px 0;
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    color: #000;
+    font-weight: 600;
+}
+.next-btn {
+    background-color: #f8d615;
+    color: #000;
+    height: 36px;
+    width: 160px;
+    margin: 0 auto 5px auto;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 5px;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    border: 0px !important;
+}
+.next-btn:hover {
+    background-color: #474b99;
+    color: #fff;
+}
+.next-btn:focus {
+	outline: none;
+    border: 1px solid blue;
+}
+.fild-box {
+position: relative;
+    margin: 7px 0;
+     width: 100%;
+    border-radius: 0;
+}
+.reg-box i {
+     position: absolute;
+    left: 7px;
+    top: 13px;
+    font-size: 16px;
+    color: #484c9a;
+}
+.fild-box input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+.fild-box input.fild-box:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000;
+}
+
+.fild-box input.fild-box::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000;
+}
+
+.fa-envelope-o {
+    color: #ff3c3c !important;
+}
+input[type='radio'] {
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+    margin-right: 10px;
+    margin-top: 0;
+}
+input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 6px solid #ccc;
+    }
+
+    input[type='radio']:checked:after {
+        width: 20px;
+        height: 20px;
+        border-radius: 15px;
+        top: 0px;
+        left: 0px;
+        position: relative;
+        background-color: #fff;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 6px solid #f8d615;
+    }
+    .radio-chk {
+    	width: 100%;
+    }
+    .radio-chk label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 25%;
+    font-size: 16px;
+    font-weight: 400;
+    }
+    .btn-box {
+    	text-align: center;
+    }
+    .btn-box button {
+        display: inline-block;
+    }
+  .btn-box  .next-btn {
+    margin: 30px 10px 5px 10px;
+}
+.prev-btn {
+    background-color: #f8d615;
+    }
+    .pas-visible {
+    	    position: absolute;
+    top: 7px;
+    right: 0;
+    font-size: 16px;
+    padding: 5px 10px;
+    color:#190808;
+    }
+    .left-l {
+    	position: relative;
+    }
+    .left-l:before {
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	left: -14px;
+    	height: 100%;
+    	border-left: 1px dashed #ccc;
+    }
+.left-l p{
+
+    font-size: 13px;
+    margin: 15px 0;
+ 
+}    
+.fa-whatsapp {
+    color: #0ce2b1 !important;
+}
+.ff {
+        font-size: 13px;
+    text-align: right;
+    width: 100%;
+    float: left;
+    margin-top: 4px;
+    color: #0072d4;
+}
+.ca {   
+    text-align: center;
+    font-size: 13px;
+    margin: 5px 0 0 0;
+    float: left;
+    width: 100%;}
+    
+    .b-date:before {
+    content: "\f274";
+    position:absolute;
+    font-family:'fontawesome';
+    top:0;
+    left:0;
+    width: 30px;
+    height:30px;
+}
+.input-group-addon {
+        padding: 0;
+    width: calc(100% + 2px);
+    border: 0px solid #ccc;
+}
+.forgot-para {
+        font-size: 15px;
+    width: 350px;
+    margin: 0px auto 10px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .radio-chk label {
+    flex: 0 0 24%;
+    font-size: 13px;
+    }
+    .radio-chk {
+    	justify-content: center;
+    }
+   .radio-chk label {
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.sml-center {
+        width: 100%;
+}
+    .radio-chk label span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 3px;
+    }
+
+}
